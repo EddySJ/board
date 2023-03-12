@@ -1,4 +1,4 @@
-package com.sangjin.board.repository
+package com.sangjin.board.repository.entity
 
 import jakarta.persistence.*
 
@@ -12,7 +12,7 @@ data class Todo (
     var seq: Long? = null,
 
     @Column(name = "body")
-    var body: String = "EMPTY",
+    var body: String,
 
 ) {
 
