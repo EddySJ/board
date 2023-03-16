@@ -46,7 +46,7 @@ class App extends Component {
 
     const request = {
         text: input,
-        completed: false
+        checked: false
     }
     const url = 'http://localhost:8080/todo/create';
     axios.post(url, request)
@@ -76,7 +76,7 @@ class App extends Component {
     const request = {
         id: id,
         text: selected.text,
-        completed: !selected.completed
+        checked: !selected.checked
     }
 
     const url = 'http://localhost:8080/todo/update';
